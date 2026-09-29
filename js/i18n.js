@@ -201,7 +201,7 @@
     "contact.p": "Disponible pour des postes à temps plein au Portugal et en Europe, du travail à distance, et des missions freelance en SIG, cartographie, photogrammétrie et automatisation.",
     "contact.phone": "Téléphone",
     "contact.vcard": "Enregistrer mes coordonnées",
-    "form.note": "Ce formulaire ouvre votre messagerie avec le message pré-rempli.",
+    "form.note": "Votre message m'est envoyé directement.",
     "form.name": "Nom",
     "form.email": "E-mail",
     "form.reason": "Objet",

@@ -293,29 +293,24 @@
     document.addEventListener("show-location", function () { select(0); scrollToMaps(); });
   }
 
-  /* ---------- Contact form (mailto, no backend needed) ---------- */
+  /* ---------- Contact form (posts to Web3Forms; only blocks invalid input) ---------- */
   function initForm() {
     var form = document.getElementById("contact-form");
     var status = document.getElementById("form-status");
     if (!form) return;
     form.addEventListener("submit", function (e) {
-      e.preventDefault();
       var name = form.name.value.trim();
       var email = form.email.value.trim();
       var msg = form.message.value.trim();
-      var reason = form.reason.value;
       var okEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
       if (!name || !okEmail || !msg) {
+        e.preventDefault();
         status.textContent = window.I18N.t("form.err");
         status.className = "form-status is-error";
         return;
       }
-      var subject = reason + " — " + name;
-      var bodyText = msg + "\n\n—\n" + name + "\n" + email;
-      var to = cfg.email || "merhbenhamza07@gmail.com";
-      window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(bodyText);
-      status.textContent = window.I18N.t("form.ok");
-      status.className = "form-status is-ok";
+      status.textContent = "";
+      status.className = "form-status";
     });
   }
 

@@ -592,8 +592,11 @@
           <p class="muted small"><svg class="icon"><use href="#i-pin"/></svg> <span data-i18n="hero.meta.base">Lisbon, Portugal</span> · UTC+0 / +1</p>
         </div>
 
-        <form class="contact-form reveal" id="contact-form" novalidate>
-          <p class="form-note" data-i18n="form.note">This form opens your email client with the message pre-filled.</p>
+        <form class="contact-form reveal" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="5d2cbb25-5f0f-4c1f-b6da-be2c98ee9172">
+          <input type="hidden" name="redirect" value="https://hamza-merhabene-portfolio.vercel.app/#contact">
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+          <p class="form-note" data-i18n="form.note">Your message is sent directly to my inbox.</p>
           <div class="field">
             <label for="cf-name" data-i18n="form.name">Name</label>
             <input id="cf-name" name="name" type="text" autocomplete="name" required>
@@ -646,9 +649,9 @@
   </div>
 
   <script src="js/config.js?v=2"></script>
-  <script src="js/i18n.js?v=7"></script>
+  <script src="js/i18n.js?v=8"></script>
   <script src="js/projects.js?v=9"></script>
-  <script src="js/main.js?v=1"></script>
+  <script src="js/main.js?v=2"></script>
   <script src="js/map.js?v=4" defer></script>
   <script src="js/viewer3d.js?v=1" defer></script>
 </body>
