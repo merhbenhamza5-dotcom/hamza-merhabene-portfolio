@@ -169,6 +169,8 @@
     "edu.3.deg": "Licence Appliquée en Génie Civil — Topographie et Géographie Numérique",
     "edu.tn": "Tunisie",
     "edu.mention": "Mention :",
+    "edu.grade.vg": "Très Bien",
+    "edu.grade.g": "Bien",
     "edu.cert": "CERTIFICATION",
     "edu.acad": "PROJETS ACADÉMIQUES — ESAT UNIVERSITY",
     "edu.acad.1": "Cartographie du risque d'inondation",

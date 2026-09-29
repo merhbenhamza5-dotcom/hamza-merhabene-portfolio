@@ -61,7 +61,7 @@
       en: {
         title: "Drone Photogrammetry & Orthomosaic Production",
         category: "Photogrammetry · Drone mapping",
-        context: "WOLO Engineering — exploitation of drone images and results",
+        context: "WOLO Engineering — drone imagery processing and outputs",
         period: "2023 — 2025",
         summary: "GCP-controlled drone surveys processed in Agisoft Metashape into dense colourised point clouds, orthomosaics and processing reports, across 30+ survey missions.",
         objective: "Turn drone images into accurate, georeferenced products — point clouds, orthomosaics and reports — for mapping and site assessment.",
@@ -620,7 +620,7 @@
         img("pfe-15", "PostgreSQL / PostGIS database and tables", "Base de données PostgreSQL / PostGIS et tables"),
         img("pfe-19", "Collection forms and drop-down lists in QGIS", "Formulaires de collecte et listes déroulantes dans QGIS"),
         img("pfe-20", "QField project on the field tablet", "Projet QField sur la tablette de terrain"),
-        img("pfe-22", "Control of the collected data", "Contrôle des données collectées"),
+        img("pfe-22", "Quality control of the collected data", "Contrôle des données collectées"),
         img("pfe-24", "Attribute entry for the network features", "Renseignement des attributs des entités du réseau"),
         img("pfe-25", "Correction of intersection / topological errors", "Correction des erreurs d'intersection / topologiques"),
         img("pfe-26", "Integration of the data into the database", "Intégration des données dans la base")
@@ -630,7 +630,7 @@
         category: "Utility GIS · Spatial database",
         context: "GeoTop — final-year engineering project (ESAT University), low-voltage network for STEG",
         period: "Mar 2023 — Sep 2023",
-        summary: "Design of a spatial database for collecting the low-voltage electrical network of Kerkennah Island: data dictionary, UML model, PostgreSQL / PostGIS, QField field collection of 1,000+ assets and data integration.",
+        summary: "Design of a spatial database for field data collection on the low-voltage electrical network of Kerkennah Island: data dictionary, UML model, PostgreSQL / PostGIS, QField field collection of 1,000+ assets and data integration.",
         objective: "Design a database for the low-voltage network, collect and process its data, and integrate it into PostgreSQL / PostGIS as the basis for a WebGIS.",
         problem: "Growing electricity demand requires better management and control of network equipment — delivery points, supports, anchor points, distribution boards and lines — which needs a consistent data model and reliable field data.",
         workflow: [
@@ -639,7 +639,7 @@
           "Check the SQL in VS Code and create the PostgreSQL / PostGIS database (WGS 84 / UTM zone 32N).",
           "Prepare the point layers, drop-down lists and collection forms in QGIS; package the QField project and transfer it to the tablet.",
           "Collect the network features in the field with QField.",
-          "Control the collected data, create junctions and line features, fill attributes and correct topological errors.",
+          "Check the collected data, create junctions and line features, fill attributes and correct topological errors.",
           "Integrate the validated data into the database."
         ],
         deliverables: ["Data dictionary", "UML model and SQL schema", "PostgreSQL / PostGIS network database", "Field-collected asset dataset"],
@@ -728,8 +728,8 @@
       model3d: "",
       images: [
         img("topo-06", "Equipment: GeoMax GNSS, GeoMax total station, tripod, pole and prism", "Matériel : GNSS GeoMax, station totale GeoMax, trépied, canne et prisme"),
-        img("topo-08", "Land subdivision (lotissement) plan", "Plan de lotissement"),
-        img("topo-11", "Traverse (cheminement polygonal) over aerial imagery", "Cheminement polygonal sur image aérienne"),
+        img("topo-08", "Land subdivision plan", "Plan de lotissement"),
+        img("topo-11", "Survey traverse over aerial imagery", "Cheminement polygonal sur image aérienne"),
         img("topo-12", "Survey plan of the site", "Plan de levé du site"),
         img("topo-13", "Traverse computation and coordinate table", "Calcul du cheminement et tableau des coordonnées"),
         img("topo-14", "Topographic survey plan", "Plan de levé topographique")
@@ -739,15 +739,15 @@
         category: "Topographic surveying · Volumes",
         context: "Topography BUT, But Groupe (surveying and land-affairs firm) — internship",
         period: "Jun 2021 — Aug 2021",
-        summary: "Field and office surveying work: traverses, topographic surveys, boundary re-establishment, land subdivision, stockpile volumes for quarry exploitation and earthwork volumes for roads and platforms.",
-        objective: "Provide the topographic base, boundaries and volume figures needed for land-development works and quarry exploitation.",
-        problem: "Land-development and exploitation works need reliable survey control, correctly re-established boundaries and volumes computed from surveyed ground against design lines.",
+        summary: "Field and office surveying work: traverses, topographic surveys, boundary re-establishment, land subdivision, stockpile volumes for quarry operations and earthwork volumes for roads and platforms.",
+        objective: "Provide the topographic base, boundaries and volume figures needed for land-development works and quarry operations.",
+        problem: "Land-development and quarrying works need reliable survey control, correctly re-established boundaries and volumes computed from surveyed ground against design lines.",
         workflow: [
           "Field work: site reconnaissance, traverses and topographic surveys with GeoMax GNSS and total station.",
-          "Re-establish property boundary markers from known coordinates (rétablissement des bornes).",
+          "Re-establish property boundary markers from known coordinates.",
           "Office work: data processing, traverse junction and plan editing in Covadis / AutoCAD.",
           "Subdivide land parcels and plot lots for development projects.",
-          "Calculate stockpile volumes before quarry exploitation and earthwork volumes for roads and platforms from the design lines."
+          "Calculate stockpile volumes before quarry operations and earthwork volumes for roads and platforms from the design lines."
         ],
         deliverables: ["Topographic plans", "Traverse computations", "Subdivision / lot plans", "Stockpile and earthwork volume calculations"],
         outcomes: []
