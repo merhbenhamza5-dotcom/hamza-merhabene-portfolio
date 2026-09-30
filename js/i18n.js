@@ -19,8 +19,8 @@
     "nav.maps": "3D / Cartes",
     "nav.education": "Formation",
     "nav.contact": "Contact",
-    "cta.cv": "Télécharger le CV",
-    "cta.cvpdf": "Télécharger le CV (PDF)",
+    "cta.cv": "Télécharger mon CV",
+    "cta.cvpdf": "Télécharger mon CV (PDF)",
     "cta.projects": "Voir les projets",
     "cta.contact": "Me contacter",
 

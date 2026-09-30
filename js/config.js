@@ -14,6 +14,8 @@ window.SITE_CONFIG = {
 
   // CV file (relative path — works on GitHub Pages project and user sites)
   cv: "assets/cv/Hamza_Merhabene_CV.pdf",
+  // French CV, used when the site is shown in French
+  cvFr: "assets/cv/Hamza_Merhabene_CV_FR.pdf",
 
   // Show "[ADD PROJECT IMAGE]" frames in case studies that have no images yet.
   // Set to false before sharing the site widely if some projects still have no images.

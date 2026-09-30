@@ -23,7 +23,13 @@
         el.hidden = true; // placeholder still in config.js -> hide from visitors
       }
     });
-    if (cfg.cv) document.querySelectorAll("[data-cv-link]").forEach(function (a) { a.setAttribute("href", cfg.cv); });
+    // CV links follow the language: English PDF by default, French PDF in French
+    function setCv(lang) {
+      var href = lang === "fr" && cfg.cvFr ? cfg.cvFr : cfg.cv;
+      if (href) document.querySelectorAll("[data-cv-link]").forEach(function (a) { a.setAttribute("href", href); });
+    }
+    setCv(window.I18N ? window.I18N.lang : "en");
+    document.addEventListener("langchange", function (e) { setCv(e.detail.lang); });
   }
 
   /* ---------- Language ---------- */
